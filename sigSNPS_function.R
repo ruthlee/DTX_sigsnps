@@ -5,7 +5,7 @@ sig.snps <- function ( directory, significance, exportplots = FALSE ) {
   
   setwd( directory )
   
-  raw_data <- read.csv( "XL1_ncapk+genotype1.csv", 1, stringsAsFactors = FALSE )
+  raw_data <- read.csv( "XL1_ncapk+genotype.csv", 1, stringsAsFactors = FALSE )
   
   snp.frame <- cbind ( "PatNum" = raw_data$CHP_filename , "snpID" = raw_data$dbSNP.RS.ID, "Call" = raw_data$Call , raw_data [ ,19:24 ], stringsAsFactors = FALSE )
   
