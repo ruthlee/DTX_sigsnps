@@ -81,6 +81,8 @@ sigsnps_data$rs6980478 <- as.numeric(sigsnps_data$rs6980478)
 sigsnps_data$rs743616 <- as.numeric(sigsnps_data$rs743616)
 sigsnps_data$rs2292334 <- as.numeric(sigsnps_data$rs2292334)
 
+write.csv( sigsnps_data, "Docetaxel+genotypes+sigsnps+numeric_covars.csv")
+
 
 
 
